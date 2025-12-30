@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datatype function</title>
+</head>
+<body>
+    <script>
+
+function greet(name) {
+    document.write("Hello " + name + "!<br>");
+}
+
+function add(a, b) {
+    return a + b;
+}
+
+
+let multiply = function(x, y) {
+    return x * y;
+};
+
+const square = (n) => n * n;
+
+greet("Bashisht");
+
+document.write("Addition: " + add(10, 20) + "<br>");
+document.write("Multiplication: " + multiply(5, 4) + "<br>");
+document.write("Square: " + square(6) + "<br><br>");
+
+document.write("<b>Scope Demonstration:</b><br>");
+if (true) {
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    document.write("Inside Block → var a = " + a + "<br>");
+    document.write("Inside Block → let b = " + b + "<br>");
+    document.write("Inside Block → const c = " + c + "<br><br>");
+}
+document.write("Outside Block → var a = " + a + "<br>");
+</script>
+</body>
+</html>

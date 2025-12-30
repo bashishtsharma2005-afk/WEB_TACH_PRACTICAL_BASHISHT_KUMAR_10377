@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>USER INFO</title>
+</head>
+<body>
+    <h1 style="text-align: center;">INFORMATIOMN FORM</h1>
+    <form action="/submit" method="post"> 
+     <label for="name">Full Name:</label><br>
+     <input type="text" id="name" name="name"><br>
+
+     <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br>
+
+    <label>Hobbies:</label><br>
+    <input type="checkbox" id="coding" name="hobby1" value="coding">
+    <label for="coding">coding</label><br>
+    <input type="checkbox" id="sport" name="hobby2" value="sport">
+    <label for="sport">sport</label><br>
+    <input type="checkbox" id="gaming" name="hobby3" value="Gaming">
+    <label for="gaming">Gaming</label><br>
+
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+    <option value="us">United States</option>
+    <option value="uk">United Kingdom</option>
+    <option value="in">India</option>
+  
+    <option value="ca">Canada</option>
+    </select><br>   
+    <input type="submit" value="Submit">
+    <button onclick="alert('hello')">click me</button>
+  </form>
+</body>
+</html>

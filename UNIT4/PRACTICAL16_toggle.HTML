@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Toggle Element</title>
+<style>
+.container{
+margin-top:20px;
+}
+.panel{
+padding:20px;
+background:wheat;
+opacity:0;
+max-height:0;
+overflow:hidden;
+transition:all 0.4s ease;
+}
+.panel.show{
+opacity:1; 
+max-height:200px;
+background:powderblue;
+}
+.btn{
+padding:10px 20px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<button class="btn" id="btn">Toggle Panel</button>
+
+<div class="container">
+<div class="panel" id="panel">
+Toggle in javascript
+</div>
+</div>
+
+<script>
+let btn=document.getElementById("btn")
+let panel=document.getElementById("panel")
+
+btn.addEventListener("click",function(){
+panel.classList.toggle("show")
+})
+</script>
+
+</body>
+</html>

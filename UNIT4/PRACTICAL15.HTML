@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+    <h2 id="title">Welcome to DOM </h2>
+    <p id="text">This paragraph for DOm.</p>
+
+    <button onclick="manipulation()">Click Me</button>
+
+    <script>
+        function manipulation() 
+        {
+            document.getElementById("title").innerHTML = "Bashisht kumar by getElement";
+            document.querySelector("#text").innerHTML = "Rungta by queryselector";
+            document.body.innerHTML += "<h3>I m  a btech student</h3>";
+        }
+    </script>
+
+</body>
+</html>

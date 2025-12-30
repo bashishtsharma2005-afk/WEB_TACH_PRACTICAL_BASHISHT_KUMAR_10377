@@ -1,0 +1,19 @@
+body{
+    background-color: darkorange;
+}
+
+h2{
+    text-align: center;
+    background-color: crimson;
+}
+p1{
+    background-color: aquamarine;
+}
+footer {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 10%;
+    bottom: 0;
+}
